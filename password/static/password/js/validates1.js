@@ -35,8 +35,8 @@ function runChecks() {
 }
 
 function throwError(error_string) {
-    
-    var alert_box = document.getElementById("wrong");
+
+    var alert_box = document.getElementById("alert");
     if (alert_box) {
         alert_box.remove();
     }
@@ -45,8 +45,8 @@ function throwError(error_string) {
     alert_box.classList.add("alert");
     alert_box.classList.add("alert-danger");
     alert_box.setAttribute("role", "alert");
-    alert_box.setAttribute("id", "wrong");
-    
+    alert_box.setAttribute("id", "alert");
+
     var heading = document.createElement("h4");
     var node_head = document.createTextNode("Sorry!");
     heading.appendChild(node_head);
